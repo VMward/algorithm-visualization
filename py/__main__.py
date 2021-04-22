@@ -1,6 +1,19 @@
 import src.data_structures.heap
+class Solution:
+   def balancedStringSplit(self, s: str) -> int:
+      bal = 0
+      stack = []
+      for c in s:
+         if c not in stack:
+            stack.append(c)
+         else:
+            stack.pop()
+            bal += 1
+      return bal
+
 
 if __name__ == "__main__":
-   print("File one executed when ran directly")
+   s = Solution()
+   print(s.balancedStringSplit('RL'))
 else:
    print("File one executed when imported")

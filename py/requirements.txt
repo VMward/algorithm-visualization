@@ -1,0 +1,14 @@
+awscli-local==0.8
+boto3==1.17.7
+botocore==1.20.7
+colorama==0.4.3
+docutils==0.15.2
+jmespath==0.10.0
+localstack-client==1.12
+pyasn1==0.4.8
+python-dateutil==2.8.1
+PyYAML==5.3.1
+rsa==4.5
+s3transfer==0.3.4
+six==1.15.0
+urllib3==1.26.3

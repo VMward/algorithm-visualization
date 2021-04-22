@@ -1,1 +1,1 @@
-from .. import queue
+from .. import stack
