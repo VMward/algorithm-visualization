@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  pyAPI:
+  py:
     build: ./py
     command: uvicorn src.server.app:app --reload --workers 1 --host 0.0.0.0 --port 5050
     volumes:
