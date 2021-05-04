@@ -1,4 +1,5 @@
 import src.data_structures.heap
+from src.algorithms.misc import powerfulIntegers
 
 class Solution:
    def balancedStringSplit(self, s: str) -> int:
@@ -14,7 +15,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-   s = Solution()
-   print(s.balancedStringSplit('RL'))
+   x = powerfulIntegers(2,3,10)
+   print(x)
 else:
    print("File one executed when imported")

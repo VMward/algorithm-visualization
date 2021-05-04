@@ -30,3 +30,31 @@ def multOverflowStrings(num1: str, num2: str) -> str:
 '''
 def balanceParentheses():
     pass
+
+
+def powerfulIntegers( x: int, y: int, bound: int) -> list[int]:
+    ret = []
+    for i in range(bound):
+        for j in range(bound):
+            powerful = x**i + y**j
+            if powerful > bound: break
+            if powerful not in ret: ret.append(powerful)
+    return ret
+
+
+def findMissing(arr, left, right, diff):
+    if (right <= left):
+        return 10**5
+    mid = left + (right - left) // 2
+
+    if (arr[mid + 1] - arr[mid] != diff):
+        return (arr[mid] + diff)
+
+    if (mid > 0 and
+            arr[mid] - arr[mid - 1] != diff):
+        return (arr[mid - 1] + diff)
+
+    if (arr[mid] == arr[0] + mid * diff):
+        return findMissing(arr, mid + 1, right, diff)
+
+    return findMissing(arr, left, mid - 1, diff)
