@@ -1,2 +1,2 @@
 # data-structures
-Example Data-Structures for Students
+Datastructure and complex algorithms behavior backend visualization service in graphql
