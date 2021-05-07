@@ -1,1 +1,1 @@
-from .. import stack
+import heapq
